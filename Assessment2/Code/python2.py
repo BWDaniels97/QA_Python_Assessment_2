@@ -268,14 +268,12 @@ def nine(string1, string2):
 
 def ten(X,Y):
 	l = []
-	n = []
-	count = 0
-	for i in range (Y):
-		for j in range (X):
+	for i in range(0, Y):
 
-			n.append(j*count)
+
+		l.append([])
+		
+		for n in range(0, X):
+			l[i].append(n * i)
 			
-		l.append(n) 
-		count += 1
-
 	return l
